@@ -8,41 +8,70 @@
 
     --heading-font: 'Rubik Scribble', serif;
     --paragraph-font: Rubik, serif;
+    --nav-font: 'Rubik Scribble', serif;
 
-    --nav-background-color: #0b0014;
-    --nav-link-color: #e4ff1a;
-    --nav-hover-link-color: #edf7f6;
-    --nav-hover-background-color: #c44536;
+    --nav-background-color: #c44536;
+    --nav-link-color: #edf7f6;
+    --nav-hover-link-color: #e4ff1a;
+    --nav-hover-background-color: #0b0014;
+
+    --url-link-color: #e4ff1a;
+    --url-link-hover-color: #edf7f6;
+    --url-link-visited-color: #c44536;
+}
+
+html {
+    background-color: var(--primary-color);
 }
 
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 header {
     padding: 20px;
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
+}
+
+img {
+    background-color: var(--secondary-color);
+}
+
+a {
+    color: var(--url-link-color);
+}
+
+a:hover {
+    color: var(--url-link-hover-color);
+}
+
+a:visited {
+    color: var(--url-link-visited-color);
 }
 
 p {
     padding: 25px;
+    color: var(--accent2-color);
 }
 
 ol {
     padding: 0 25px 25px 25px;
+    color: var(--accent2-color);
 }
 
 nav {
     background-color: var(--nav-background-color);
-    font-family: var(--heading-font);
+    font-family: var(--nav-font);
     font-size: 1.5rem;
+    font-weight: bold;
     display: flex;
     justify-content: space-evenly;
 }
