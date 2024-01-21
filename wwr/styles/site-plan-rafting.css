@@ -35,6 +35,10 @@ p {
     padding: 25px;
 }
 
+ol {
+    padding: 25px;
+}
+
 nav {
     background-color: var(--nav-background-color);
     font-family: var(--heading-font);
