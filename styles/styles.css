@@ -37,9 +37,9 @@ main {
 }
 
 aside {
-    position: relative;
     width: 20em;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -48,10 +48,10 @@ aside img {
 }
 
 aside h2 {
-    position: absolute;
     top: 140px;
     left: 90px;
     background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
 }
 
 footer {
