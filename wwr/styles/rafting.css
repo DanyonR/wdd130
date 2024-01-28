@@ -114,19 +114,6 @@ a:visited {
     background-color: var(--nav-hover-background-color);
 }
 
-.sociallinks {
-    background-color: var(--nav-background-color);
-    font-family: var(--nav-font);
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.sociallinks a {
-    display: block;
-    text-decoration: none;
-    padding: 1rem;
-}
-
-footer p {
+footer {
     text-align: center;
 }
