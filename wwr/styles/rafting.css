@@ -45,7 +45,7 @@ body {
 
 h1 {
     position: absolute;
-    left: 15rem;
+    left: 26rem;
     top: .3rem;
     font-family: var(--heading-font);
     color: var(--accent1-color);
