@@ -89,31 +89,6 @@ a:visited {
     color: var(--url-link-visited-color);
 }
 
-.headnav {
-    background-color: var(--nav-background-color);
-    font-family: var(--nav-font);
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.headnav a {
-    display: block;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 1rem;
-}
-
-.headnav a:link, nav a:visited {
-    color: var(--nav-link-color)
-}
-
-.headnav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
-
 footer {
     text-align: center;
 }
