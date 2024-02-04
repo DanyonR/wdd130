@@ -19,9 +19,60 @@
     --url-link-hover-color: #edf7f6;
     --url-link-visited-color: #c44536;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     background-color: var(--primary-color);
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    background-color: var(--secondary-color);
+    grid-template: 1fr / 1fr 2fr;
+    align-items: center;
+}
+
+nav {
+    grid-column: 2;
+    font-family: var(--nav-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color)
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+h1 {
+    position: absolute;
+    left: 25%;
+    top: .3rem;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding: 20px 36.52px 20px 36.52px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -32,29 +83,45 @@ h2, h3, h4, h5, h6 {
 
 p {
     color: var(--accent2-color);
+    font-family: var(--paragraph-font)
 }
 
-body {
-    width: 1000px;
+figcaption {
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+
+footer p {
+   font-family: var(--nav-font);
+   font-weight: bold;
+   font-size: 1.5rem;
+   grid-column: 1;
+   align-self: center;
+   padding-left: 1rem;
+}
+
+/* Class selectors */
+.logo {
+    background-color: var(--secondary-color);
+    width: 100%;
+    grid-column: 1;
 }
 
 .hero {
     position: relative;
-    padding-top: 4px;
-}
-
-h1 {
-    position: absolute;
-    left: 26rem;
-    top: .3rem;
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
+    padding-top: 0.1rem;
 }
 
 .heroarticle {
     position: absolute;
     top: 90px;
-    right: 45px;
+    right: 50px;
     display: block;
     width: 90%;
     background-color: rgba(196, 69, 54, .8);
@@ -69,26 +136,37 @@ h1 {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 2rem;
-    padding-left: .8rem;
+    padding: 30px 220px 30px 30px;
 }
 
-.logo {
-    background-color: var(--secondary-color);
-    width: 100%;
+.adventure {
+    display: grid;
+    padding: 30px 0 30px 0;
 }
 
-a {
-    color: var(--url-link-color);
+.trips {
+    display: flex;
+    gap: 10px;
 }
 
-a:hover {
-    color: var(--url-link-hover-color);
+.trips img {
+    max-width: 100%;
 }
 
-a:visited {
-    color: var(--url-link-visited-color);
-}
-
-footer {
+.trips figcaption {
     text-align: center;
+}
+
+.social {
+    grid-column: 2;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.social a {
+    padding: 0.25rem 0.5rem 0 0.5rem
+}
+
+.social a:hover {
+    background-color: var(--accent1-color);
 }
