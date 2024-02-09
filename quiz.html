@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 130 Quiz Form | Danyon Reed</title>
+    <meta name="description" content="Quiz form demonstrating knowledge of basic HTML forms">
+    <meta name="author" content="Danyon Reed">
     <link rel="stylesheet" href="/styles/quiz.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
     <main>
         <form>
             <div class="question">
-                <label>1. Type out the HTML tag that links a stylesheet to an HTML page.<br><input type="text" name="q1"></label>
+                <label>1. Type out the HTML tag that links a stylesheet to an HTML page.<br><input type="text" name="q1" id="q1"></label>
             </div>
             <div class="question">
                 <label>2. What is semantic HTML?<br><textarea name="q2" id="q2" rows="4"></textarea></label>
@@ -31,7 +33,7 @@
                 </label>
             </div>
             <div class="question">
-                <label>4. What is the current HTML version?<br><input type="text" name="q4"></label>
+                <label>4. What is the current HTML version?<br><input type="number" name="q4" id="q4"></label>
             </div>
             <button type="submit">Submit Quiz</button>
         </form>
