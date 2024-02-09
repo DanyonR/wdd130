@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter&family=Satisfy&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    font-size: 1em;
+    color: bisque;
+    background: orchid;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 0.7rem;
+    text-align: center;
+    font-family: Satisfy;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 5px dotted bisque;
+    border-radius: 3rem;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    margin: 0.5rem;
+    border: 2px dotted bisque;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    font-family: Satisfy;
+    font-size: x-large;
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem;
+    font-family: Satisfy;
+    font-size: x-large;
+    color: orchid;
+    background-color: bisque;
+    border: none;
+    border-radius: 2rem;
+    width: 200px;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: orchid;
+    color: bisque;
+}
+
+input, select, textarea {
+    background-color: bisque;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: Inter;
+    border-radius: 2rem;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 850px;
+    text-align: center;
+}
+
+/* class selectors */
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+/* id selectors */
+#places {
+    text-align: center;
+    padding: 0.5rem;
+}
