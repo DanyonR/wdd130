@@ -67,15 +67,13 @@ nav a:hover {
 }
 
 h1 {
-    position: absolute;
-    left: 25%;
-    top: .3rem;
+    text-align: center;
     font-family: var(--heading-font);
     color: var(--accent1-color);
-    padding: 20px 36.52px 20px 36.52px;
+    padding: 1rem;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h5, h6 {
     text-align: center;
     font-family: var(--heading-font);
     color: var(--accent1-color);
@@ -108,7 +106,7 @@ form {
     border: 5px solid var(--secondary-color)
 }
 
-input, select, textarea {
+input, textarea {
     width: 330px;
     font-size: large;
     border: none;
@@ -116,10 +114,10 @@ input, select, textarea {
     color: var(--accent2-color);
 }
 
-input[type="checkbox"] {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
+input[type="checkbox"], input[type="radio"] {
+    float: left;
+    margin-right: 5px;
+    margin-top: 3px;
 }
 
 button {
@@ -164,6 +162,15 @@ footer p {
 .hero {
     position: relative;
     padding-top: 0.1rem;
+}
+
+.hero-h1 {
+    position: absolute;
+    left: 25%;
+    top: .3rem;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding: 20px 36.52px 20px 36.52px;
 }
 
 .heroarticle {
@@ -245,6 +252,11 @@ footer p {
     border: none;
 }
 
+.radio label {
+    display: block;
+    text-align: left;
+}
+
 .wireframe {
     text-decoration: none;
     align-self: center;
@@ -255,4 +267,9 @@ footer p {
 
 .wireframe:hover {
     color: var(--accent2-color);
+}
+
+/* ID Selectors */
+#general, #reservation, #suggestion, #newsletter {
+    width: auto;
 }

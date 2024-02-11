@@ -19,7 +19,7 @@
         </nav>
     </header>
     <main>
-        <h2>Stop in for a visit or send a shout out to our in-house thrill-seekers!</h2>
+        <h1>We Can Help!</h1>
         <div class="staff-group">
             <figure>
                 <img src="images/employee-cell-phone.png" alt="Shaniece McGriffith">
@@ -75,23 +75,19 @@
                     <label>Full Name<br><input type="text" id="name" name="name"></label>
                 </div>
                 <div><label>Email<br><input type="email" id="email" name="email"></label></div>
-                <div>
-                    <label>Reason for contacting?<br>
-                        <select name="reason" id="reason">
-                            <option value="default">Choose one...</option>
-                            <option value="">General Inquiry</option>
-                            <option value="">Reservation Question</option>
-                            <option value="">Website Suggestion</option>
-                        </select>
-                    </label>
+                <div class="radio">
+                    <p>Choose the reason for your message:</p><br>
+                    <label>General Inquiry<input type="radio" name="general" id="general"></label>
+                    <label>Reservation Question<input type="radio" name="reservation" id="reservation"></label>
+                    <label>Website Suggestion<input type="radio" name="suggestion" id="suggestion"></label>
                 </div>
-                    <div>
-                        <label>Type your message:<br><textarea name="message" id="message" rows="10"></textarea></label>
-                    </div>
-                    <div>
-                        <label>Please subscribe me to the monthly newsletter <input type="checkbox" name="newsletter" id="newsletter"></label>
-                    </div>
-                    <button type="submit">Send it down the river!</button>
+                <div>
+                    <label>Type your message:<br><textarea name="message" id="message" rows="10"></textarea></label>
+                </div>
+                <div>
+                    <label>Please subscribe me to the monthly newsletter<input type="checkbox" name="newsletter" id="newsletter"></label>
+                </div>
+                <button type="submit">Send it down the river!</button>
             </form>
         </div>
     </main>
