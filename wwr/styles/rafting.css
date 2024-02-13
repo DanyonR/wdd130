@@ -260,13 +260,13 @@ footer p {
 .wireframe {
     text-decoration: none;
     align-self: center;
-    color: var(--primary-color);
+    color: var(--accent2-color);
     font-family: var(--paragraph-font);
     padding: 0 2rem 0 2rem;
 }
 
 .wireframe:hover {
-    color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 /* ID Selectors */
