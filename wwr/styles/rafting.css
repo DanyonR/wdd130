@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100&family=Rubik+Scribble&display=swap');
 
 :root {
     --primary-color: #0b0014;
@@ -95,6 +95,51 @@ p, label {
 figcaption {
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
+}
+
+table {
+    font-family: var(--paragraph-font);
+    font-size: smaller;
+    color: var(--accent2-color);
+    border: 1px solid var(--accent2-color);
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 2rem 0 0.5rem 0;
+}
+
+th, td {
+    border: 1px solid var(--accent2-color);
+    padding: 4px;
+}
+
+thead > tr:nth-of-type(1) {
+    vertical-align: bottom;
+}
+
+thead {
+    border-bottom: 5px double var(--accent2-color);
+}
+
+tbody > tr > th:first-of-type {
+    text-align: center;
+    vertical-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: var(--secondary-color);
+}
+
+thead, tfoot {
+    background-color: var(--secondary-color);
+}
+
+tfoot {
+    border-top: 5px double var(--accent2-color);
+}
+
+caption {
+    caption-side: top;
+    font-size: x-large;
 }
 
 form {
@@ -267,6 +312,49 @@ footer p {
 
 .wireframe:hover {
     color: var(--primary-color);
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 0 50px;
+    align-items: center;
+}
+
+.summary h1 {
+    grid-column: span 2;
+}
+
+.needs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.needs img {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.needs button {
+    width: 200px;
+    padding: 0.8rem;
+}
+
+.rafters {
+    display: flex;
+    flex-direction: column;
+}
+
+.rafters figure {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.rafters img {
+    width: 100%;
 }
 
 /* ID Selectors */
