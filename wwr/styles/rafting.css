@@ -341,8 +341,9 @@ footer p {
 
 .big-falls button {
     position: absolute;
-    top: 80%;
+    top: 79%;
     left: 5%;
+    padding: 1rem;
     box-shadow: 10px 10px 10px var(--primary-color);
 }
 
@@ -350,7 +351,7 @@ footer p {
     position: absolute;
     top: 10%;
     left: 60%;
-    padding: 2rem;
+    padding: 0.5rem 1rem 2rem 1rem;
     font-size: 40px;
     color: var(--primary-color);
     background-color: rgba(196, 69, 54, .8);
@@ -358,7 +359,7 @@ footer p {
 
 .big-falls p {
     position: absolute;
-    top: 29%;
+    top: 25%;
     left: 78%;
 }
 
