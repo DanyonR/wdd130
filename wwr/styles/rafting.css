@@ -142,15 +142,6 @@ caption {
     font-size: x-large;
 }
 
-form {
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-    border: 5px solid var(--secondary-color)
-}
-
 input, textarea {
     width: 330px;
     font-size: large;
@@ -297,6 +288,15 @@ footer p {
     border: none;
 }
 
+.message {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    border: 5px solid var(--secondary-color)
+}
+
 .radio label {
     display: block;
     text-align: left;
@@ -321,15 +321,101 @@ footer p {
     align-items: center;
 }
 
+.raft-it {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 100px;
+    align-items: center;
+}
+
 .summary h1 {
     grid-column: span 2;
 }
 
-.needs {
+.big-falls {
+    grid-column: span 2;
+    display: flex;
+    position: relative;
+}
+
+.big-falls button {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    box-shadow: 10px 10px 10px var(--primary-color);
+}
+
+.go-there {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    padding: 2rem;
+    font-size: 40px;
+    color: var(--primary-color);
+    background-color: rgba(196, 69, 54, .8);
+}
+
+.big-falls p {
+    position: absolute;
+    top: 29%;
+    left: 78%;
+}
+
+.needs, .jerry {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.adrenaline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 3rem; */
+}
+
+.jerry img {
+    width: 100%;
+}
+
+.adrenaline img {
+    width: 100%;
+}
+
+.newsletter {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-column: span 2;
+    border: 5px solid var(--secondary-color);
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter form div {
+    padding: 1rem;
+}
+
+.newsletter button {
+    margin: 1rem;
+    width: 300px;
+    padding: 0.5rem;
+}
+
+.newsletter div {
+    padding-top: 1rem;
 }
 
 .needs img {
